@@ -1,0 +1,21 @@
+<div class="jumbotron" ng-if="loading">
+  <h1>{{movie.title}}</h1>
+  <img ng-src="{{movie.images.large}}" alt="">
+  <p class="des">{{movie.summary}}</p>
+  <p class="btnLink"><a class="btn btn-primary btn-lg" href="{{movie.alt}}" role="button">查看更多</a></p>
+</div>
+
+
+<!-- 加载动画效果 -->
+<div class="mask" ng-show="!loading">
+    <div class="loadEffect">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
